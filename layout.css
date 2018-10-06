@@ -1,0 +1,41 @@
+body{
+margin:0px;	
+}
+
+.frame{
+	width:100%;
+	
+	display:flex;
+	justify-content:center;/*水平對齊*/
+	align-items:center;/*垂直對齊*/
+
+	margin-left:auto;magin-right:auto;
+	background-color:white;
+}
+.left{
+	width:530px;height:80px;
+	background-color:#3b5998;
+}
+.right{
+	width:530px;height:80px;
+	background-color:#3b5998;
+}
+.inleft{
+	width:530px;height:100px;
+	background-color:#f5f5f5;
+}
+.inright{
+	width:530px;height:100px;
+	background-color:#f5f5f5;
+}
+.thrleft{
+	width:530px;height:470px;
+	background-color:#eceeef;	
+}
+.thrright{
+	width:530px;height:470px;
+	background-color:#eceeef;
+}
+.middle{
+	width:1060px;height:200px;
+}
