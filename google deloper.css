@@ -1,0 +1,83 @@
+.title{
+	font-size:40px;font-weight:bold;
+	text-align:center;margin-bottom:40px;
+	line-height:2.5;
+}
+.meun-desktop{
+	display:block;
+}
+.meun-mobile{
+	display:none;
+}
+.gray{
+	color:gray;
+	font-size:24;
+}
+.justify{
+	word-spacing:20px;
+	color:black;
+	font-size:18;
+}
+.bold{
+	font-weight:bold;
+}
+.frame{
+	display:flex;
+	justify-content:center;
+	align-items:flex-start;
+	flex-wrap:wrap;/*容許換行*/
+}
+.frame_2{
+	text-align:center;
+	font-size:24;
+	color:white;
+	background-color:black;
+	width:1000px;
+}
+/*
+	寬度 > 1200px
+	總寬度固定在 1200px
+*/
+.box{
+	width:500px;margin:10px;
+	background-color:gray;
+}
+/*
+	階層式選擇器，搭配其他選擇器使
+	外層選擇器>內層選擇器{}
+*/
+.box>img{
+	width:100%
+}
+	/* CSS3 Media Query */
+@media (max-width:1200px){
+	/* 如果螢幕小於 1200px，套用這個區塊的設定 */
+	.frame{
+		flex-wrap:wrap
+	}
+	.box{
+		width:45%
+	}
+	.meun-desktop{
+		display:block;
+	}
+	.meun-mobile{
+		display:none;
+	}
+}
+@media (max-width:600px){
+	/* 如果螢幕小於 600px，套用這個區塊的設定 */
+	.title{
+		font-size:24px;
+	}
+	.box{
+		width:90%
+	}
+	.meun-desktop{
+		display:none;
+	}
+	.meun-mobile{
+		display:block;
+	}
+}
+
